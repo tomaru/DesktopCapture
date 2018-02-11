@@ -1,0 +1,28 @@
+{
+  "name": "CaptureServer",
+  "description": "Runs DesktopCapture Server",
+  "version": "0.1.0",
+  "manifest_version": 2,
+
+  "sockets": {
+    "tcp": {
+      "connect": "*"
+    },
+
+    "tcpServer": {
+      "listen": "*"
+    }
+  },
+  
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    "desktopCapture",
+    "storage",
+    "notifications"
+  ],
+  "minimum_chrome_version": "28"
+}

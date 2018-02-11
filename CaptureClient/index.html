@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View Talk</title> 
+    <link rel="stylesheet" href="index.css">
+    <script src="sha1.js"></script>
+    <script src="http.js"></script>
+    <script src="socket.io.js"></script>
+    <script src="capture.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+  <section id="main">
+  <button type="button" id="sendRequest">Request</button>
+  <button type="button" id="ButtonSettingClear">SettingClear</button>
+  <button type="button" id="hangUp">Hang Up</button>
+
+  
+  <table id="information" class="tooltip">
+  <tr>
+     <td>
+        Account Name
+     </td>
+     <td title = "example: tomaru">
+        <input type="text" id="input_account" placeholder="example: tomaru"  value=''>
+     </td>
+  </tr>
+  <tr>
+     <td title = "After Typing, MUST RESTART">
+        Signaling Server IP Address
+     </td>
+     <td title = "example: 192.168.2.28">
+        <input type="text" id="input_ipaddress" placeholder="example: 192.168.2.28" value=''>
+     </td>
+  </tr>
+  <tr>
+     <td title = "After Typing, MUST RESTART">
+        Room Name
+     </td>
+     <td title = "example: ParkingProj">
+        <input type="text" id="input_roomname" placeholder="example: ParkingProj" value=''>
+     </td>
+  </tr>
+  <tr>
+     <td title = "After Typing, MUST RESTART">
+        Chat Server IP Address
+     </td>
+     <td title = "example: 192.168.2.28">
+        <input type="text" id="input_chatipaddress" placeholder="example: 192.168.2.28" value=''>
+     </td>
+  </tr>
+  </table>
+  
+  <div id="view">
+    <div ><textarea id="log"></textarea></div>
+    <video id="remote-video" autoplay></video>
+  </div>
+  
+  </section>
+  <section id="textinput">
+     <form name="formTextInput" action="">
+        <input type="text" name="message" id="input_text"  placeholder="Type a message to other connected clients here">
+     </form>
+  </section>
+  </body>
+</html>

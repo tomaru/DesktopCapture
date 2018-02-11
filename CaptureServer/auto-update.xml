@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+  <app appid='この部分は拡張機能のIDを入力'>
+    <updatecheck codebase='ここは新バージョンのcrxファイルへのパスを記述' version='manifest.jsonに記述された新しいバージョンと同一のもの' />
+  </app>
+</gupdate>

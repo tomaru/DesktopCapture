@@ -1,0 +1,29 @@
+{
+  "name": "CaptureClient",
+  "description": "Runs DesktopCapture Client",
+  "version": "0.1.0",
+  "manifest_version": 2,
+    "icons": {
+        "32": "contentSettings.png"
+    },  
+  "sockets": {
+    "tcp": {
+      "connect": "*"
+    },
+
+    "tcpServer": {
+      "listen": "*"
+    }
+  },
+  
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    "storage" ,
+    "notifications"
+  ],
+  "minimum_chrome_version": "28"
+}

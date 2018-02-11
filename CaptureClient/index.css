@@ -1,0 +1,126 @@
+/* ページ全体 */
+html, body{
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow: hidden;
+}
+body{
+display: flex;
+flex-flow: column nowrap;
+align-items: stretch;
+justify-content: stretch;
+}
+body > section{
+box-sizing: border-box;
+}
+
+/* メインコンテンツ */
+#main{
+flex: 1 1 auto;
+width: 100%;
+height: 100%;
+overflow: auto;
+border-bottom: solid 1px #000;
+}
+
+/* 情報テーブル */
+#information{
+width: 100%;
+border-collapse: collapse;
+}
+#information tr{
+border-style: solid;
+border-color: #000;
+border-width: 1px 0px;
+}
+#information tr > *{
+height: 32px; line-height: 32px;
+padding: 0px 8px;
+font-size: 14px;
+white-space: nowrap;
+}
+#information tr > *:nth-child( 2 ){
+width: 80%;
+padding: 0px;
+border-left: solid 1px #000;
+}
+
+.tooltip td span {
+width: 100%;
+display: none;
+}
+.tooltip td:hover span {
+display: inline;
+position: absolute;
+background-color: #cccccc;
+color: #000000;
+border-style: solid;
+border-width: 1px;
+border-color: #dedede #666666 #666666 #dedede;
+font-size: .9em;
+}
+
+/* ビューエリア */
+#view{
+display: flex;
+flex-flow: row nowrap;
+align-items: stretch;
+justify-content: stretch;
+width: 100%;
+height: 100%;
+}
+#view > div{
+flex: 1 1 auto;
+box-sizing: border-box;
+heigt: 100%;
+}
+#log{
+width: 300px; min-width: 160px;
+}
+
+#video{
+width: 70%;
+border-left: solid 1px #000;
+}
+
+/* テキスト入力欄 */
+#textinput{
+width: 100%;
+height: 32px; line-height: 32px;
+flex: 0 0 auto;
+}
+
+/* その他パーツの設定 */
+form{
+width: 100%;
+height: 100%;
+padding: 0px;
+margin: 0px;
+}
+textarea{
+display: block;
+box-sizing: border-box;
+width: 100%;
+height: 100% !important;
+padding: 4px;
+margin: 0px;
+border: none;
+}
+input[ type="text" ]{
+display: block;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+padding: 0px 8px;
+margin: 0px;
+border: none;
+}
+video{
+display: block;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+background: #000;
+}
