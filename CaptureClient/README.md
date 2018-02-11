@@ -9,4 +9,4 @@ An example Capture Client.
 * [Window](http://developer.chrome.com/apps/app.window.html)
 
 ## Screenshot
-![screenshot](/CaptureServer/assets/DemoCaptureClient1.PNG)
+![screenshot](/CaptureClient/assets/DemoCaptureClient1.PNG)
